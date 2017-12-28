@@ -8,8 +8,8 @@
         $(document).ready(function () {
             var username = prompt('Please enter a username:');
 
-            //var uri = 'ws://' + window.location.hostname + window.location.pathname.replace('default.html', '') + 'chat.ashx?username=' + username;
-            var uri = 'wss://localhost/Chat/chat.ashx?username=' + username;
+            var uri = 'wss://' + window.location.hostname + window.location.pathname.replace('default.html', '') + 'chat.ashx?username=' + username;
+            //var uri = 'wss://localhost/Chat/chat.ashx?username=' + username;
             console.log('Connecting to: ' + uri);
             websocket = new WebSocket(uri);
 
